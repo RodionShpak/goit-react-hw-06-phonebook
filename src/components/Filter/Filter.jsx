@@ -12,7 +12,7 @@ export const FilterForm = () => {
   return (
     <Box display="flex" flexDirection="column" my="10px" p="0" border="1px solid #888888" borderRadius="2px">
       <Label htmlFor="contactFIlter">
-        Filter
+        Фільтр
         {filter.search.length > 0 && (
           <Button type="button" onClick={() => dispatch(searchFilter(''))}>
             ❌

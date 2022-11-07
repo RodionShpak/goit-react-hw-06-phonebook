@@ -19,11 +19,11 @@ export const ContactForm = ({ editId, editName, editNumber, onSubmit, onResetFor
   return (
     <form action="#" onSubmit={contactSubmitHandler}>
       <Box display="flex" flexDirection="column" mt="10px" p="0" border="1px solid #888888" borderRadius="2px">
-        <Label htmlFor="contactName">Name</Label>
+        <Label htmlFor="contactName">Ім'я користувача</Label>
         <InputField id="contactName" type="text" name="name" title="Enter your name" required />
       </Box>
       <Box display="flex" flexDirection="column" mt="10px" p="0" border="1px solid #888888" borderRadius="2px">
-        <Label htmlFor="contactNumber">Phone number</Label>
+        <Label htmlFor="contactNumber">Номер телефону</Label>
         <InputField
           type="tel"
           name="number"
@@ -32,7 +32,7 @@ export const ContactForm = ({ editId, editName, editNumber, onSubmit, onResetFor
           required
         />
       </Box>
-      <SubmitButton type="submit">Add user</SubmitButton>
+      <SubmitButton type="submit">Додати користувача</SubmitButton>
     </form>
   );
 };

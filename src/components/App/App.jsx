@@ -17,7 +17,7 @@ export const App = () => {
   return (
     <Box display="flex" flexDirection="row">
       <Box display="flex" flexDirection="column">
-        <Section title="Contact info">
+        <Section title="Інформація про користувача">
           <ContactForm />
         </Section>
         {contacts.length > 0 && (
@@ -29,7 +29,7 @@ export const App = () => {
 
       {contacts?.length > 0 && (
         <Box display="flex" flexDirection="column">
-          <Section title="Contact list" height="100%">
+          <Section title="Список контактів" height="100%">
             <ListOfContacts contacts={filteredContacts}></ListOfContacts>
           </Section>
         </Box>
